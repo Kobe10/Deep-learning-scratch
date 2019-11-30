@@ -2,9 +2,10 @@
 import numpy as np
 import matplotlib.pylab as plt
 
-
+# 数值微分求导数：利用微笑的差分求导数的过程
 def numerical_diff(f, x):
     h = 1e-4 # 0.0001
+    # f(x+h) - f(x-h) 使用中心差分的思想 ：以x为中心，计算它左右两边的差分
     return (f(x+h) - f(x-h)) / (2*h)
 
 
@@ -23,7 +24,7 @@ y = function_1(x)
 plt.xlabel("x")
 plt.ylabel("f(x)")
 
-tf = tangent_line(function_1, 5)
+tf = tangent_line(function_1, 10)
 y2 = tf(x)
 
 plt.plot(x, y)

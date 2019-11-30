@@ -34,7 +34,7 @@ def numerical_gradient(f, X):
         
         return grad
 
-
+# 偏导数函数
 def function_2(x):
     if x.ndim == 1:
         return np.sum(x**2)
