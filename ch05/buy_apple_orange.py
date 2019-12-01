@@ -1,6 +1,9 @@
 # coding: utf-8
 from layer_naive import *
 
+from ch05.layer_naive import MulLayer, AddLayer
+
+# 乘法+加法的复杂实现  买苹果和橘子的例子
 apple = 100
 apple_num = 2
 orange = 150
